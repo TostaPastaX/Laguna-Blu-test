@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Laguna Blu – Ristorante e pizzeria a Milano</title>
+<meta name="description" content="Laguna Blu, ristorante e pizzeria in Via Savona 108 a Milano: cucina casalinga, porzioni generose, prezzi onesti. Menù, orari e indicazioni.">
+<!-- BOZZA: alla pubblicazione definitiva rimuovere la riga robots e mettere demo:false nel blocco C -->
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Laguna Blu – Ristorante e pizzeria a Milano">
+<meta property="og:type" content="restaurant">
+<style>
+:root{--bg:#FBF8F3;--sf:#fff;--bl:#0F3D5E;--tx:#1C2B36;--mu:#5B6B76;--sand:#C8A35B;--ln:#E7E0D3;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 var(--sans);padding-bottom:84px}
+h1,h2,h3{font-family:var(--serif);color:var(--bl);line-height:1.15;margin:0}
+a{color:inherit}.w{max-width:1100px;margin:0 auto;padding:0 20px}
+.demo{background:#F3E8D3;text-align:center;font-size:14px;padding:6px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;gap:20px;min-height:68px;flex-wrap:wrap}
+.logo{font:700 24px var(--serif);color:var(--bl);text-decoration:none;margin-right:auto}
+nav{display:flex;gap:18px}nav a{text-decoration:none;font-weight:600;padding:10px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 24px;border-radius:999px;border:2px solid var(--bl);background:var(--bl);color:#fff;font:700 16px var(--sans);text-decoration:none;cursor:pointer}
+.btn.o{background:transparent;color:var(--bl)}
+:focus-visible{outline:3px solid var(--sand);outline-offset:2px}
+section{padding:72px 0}h2{font-size:clamp(30px,5vw,42px);margin-bottom:28px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(46px,9vw,84px);margin:16px 0 12px}
+.sub{font:600 21px var(--sans);margin:0 0 6px}.mu{color:var(--mu)}
+.badge{display:inline-flex;gap:8px;align-items:center;background:#fff;border-radius:999px;padding:6px 14px;font-weight:700;font-size:15px;box-shadow:0 2px 10px rgba(15,61,94,.08)}
+.badge i{width:10px;height:10px;border-radius:50%;background:#9aa5ad}.badge.on i{background:#1f7a3a}.badge.on{color:#1f6b36}
+.ph{aspect-ratio:4/3;border-radius:24px;background:linear-gradient(145deg,#BFDDE8,#EFE4CC);display:grid;place-items:center;color:var(--bl);font-size:15px;text-align:center;padding:12px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}.chip{background:var(--sf);border:1px solid var(--ln);border-radius:999px;padding:8px 16px;font-weight:600}
+.band{background:var(--sf);border-block:1px solid var(--ln)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 24px}
+.tabs button{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--ln);background:var(--bg);font:600 16px var(--sans);color:var(--tx);cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--bl);border-color:var(--bl);color:#fff}
+.note{background:#E8EFF5;border-radius:14px;padding:12px 16px;font-size:15px}
+.card{background:var(--sf);border-radius:20px;padding:12px 28px;box-shadow:0 1px 3px rgba(15,61,94,.08)}
+.card h3{font-size:22px;margin:20px 0 4px}.card h3:first-child{margin-top:12px}
+.it{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--ln)}
+.it:last-child{border:0}.it b{font-weight:600}.it small{display:block;color:var(--mu);font-size:14px}.pr{white-space:nowrap;font-weight:700;color:var(--bl)}.pr.x{font-weight:400;color:var(--mu);font-size:14px}
+table{width:100%;border-collapse:collapse;background:var(--sf);border-radius:20px;overflow:hidden}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--ln)}th{color:var(--mu);font-size:15px}tr.today td{background:#EEF4F8;font-weight:700}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.g .ph{border-radius:16px}
+details{background:var(--sf);border-radius:14px;margin-bottom:10px;padding:14px 18px}summary{font-weight:700;cursor:pointer;min-height:24px}
+footer{background:var(--bl);color:#dbe6ee;padding:40px 0;font-size:15px}footer a{color:#fff}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--ln)}.bar .btn{flex:1}
+@media(min-width:760px){.bar{display:none}body{padding-bottom:0}}
+@media(max-width:759px){.hero .w{grid-template-columns:1fr}nav{order:3;width:100%;overflow-x:auto}section{padding:48px 0}.g{grid-template-columns:repeat(2,1fr)}.card{padding:8px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="demo" id="demo" hidden>Bozza dimostrativa – contenuti da confermare</div>
+<header><div class="w"><a class="logo" href="#top" data-t="name"></a>
+<nav aria-label="Principale"><a href="#menu">Menù</a><a href="#orari">Orari</a><a href="#dove">Dove siamo</a><a href="#contatti">Contatti</a></nav>
+<a class="btn" data-tel>Chiama</a></div></header>
+<main id="top">
+<section class="hero"><div class="w"><div>
+<span class="badge" id="st"><i></i><span>…</span></span>
+<h1 data-t="name"></h1><p class="sub">Ristorante e pizzeria a Milano</p><p class="mu" data-t="tag"></p>
+<div class="cta"><a class="btn" href="#menu">Guarda il menù</a><a class="btn o" data-tel>Chiama ora</a></div></div>
+<div class="ph">Foto da inserire</div></div></section>
+<section class="band" style="padding:36px 0"><div class="w"><div class="chips" id="sv"></div><p class="mu" style="margin:14px 0 0" data-t="price"></p></div></section>
+<section id="menu"><div class="w"><h2>Menù</h2>
+<p class="note">Coperto € 2 · Per allergeni e intolleranze chiedi al personale · Menù da confermare con il locale</p>
+<div class="tabs" id="tabs"></div><div class="card" id="mn"></div></div></section>
+<section class="band" id="galleria"><div class="w"><h2>Il locale</h2><div class="g" id="gl"></div></div></section>
+<section id="orari"><div class="w"><h2>Orari</h2><table><thead><tr><th>Giorno</th><th>Pranzo</th><th>Cena</th></tr></thead><tbody id="ho"></tbody></table></div></section>
+<section class="band" id="dove"><div class="w"><h2>Dove siamo</h2><p data-t="addr"></p>
+<div class="cta"><a class="btn" data-h="dir">Indicazioni</a><a class="btn o" data-h="map">Vedi su Google Maps</a><a class="btn o" data-h="rev">Oltre 500 recensioni su Google</a></div></div></section>
+<section><div class="w"><h2>Domande frequenti</h2>
+<details><summary>Si può prenotare?</summary><p>Da confermare con il locale: per prenotare chiama il <a data-tel data-t="phone"></a>.</p></details>
+<details><summary>Fate asporto e consegna?</summary><p>Su Google risultano disponibili: dettagli da confermare con il locale.</p></details>
+<details><summary>Sono ammessi i cani?</summary><p>Su Google risultano ammessi: da confermare con il locale.</p></details></div></section>
+</main>
+<footer id="contatti"><div class="w"><p><b data-t="name"></b> · <span data-t="addr"></span></p>
+<p>Tel. <a data-tel data-t="phone"></a></p>
+<p>[Ragione sociale] · P.IVA [da inserire] · Sede legale [da inserire] · <a href="#">Privacy</a></p><p id="cr"></p></div></footer>
+<div class="bar"><a class="btn" data-tel>Chiama</a><a class="btn o" data-h="dir">Indicazioni</a></div>
+<script>
+/* ===== CONTENUTI: modifica solo questo blocco ===== */
+const P=[720,900],D=[1140,1440];
+const C={demo:true,credit:"",name:"Laguna Blu",tag:"Cucina casalinga, porzioni generose, prezzi onesti.",
+phone:"02 474969",tel:"+3902474969",addr:"Via Savona 108, 20144 Milano",
+dir:"https://www.google.com/maps/dir/?api=1&destination=Via+Savona+108+20144+Milano&destination_place_id=ChIJ9QjjfMPDhkcRY-GK2qC-89g",
+map:"https://www.google.com/maps/place/?q=place_id:ChIJ9QjjfMPDhkcRY-GK2qC-89g",
+rev:"https://search.google.com/local/reviews?placeid=ChIJ9QjjfMPDhkcRY-GK2qC-89g",
+price:"Fascia di prezzo indicativa: € 10–20 a persona",
+services:["Tavoli all’aperto","Menù bambini","Cani ammessi","Asporto","Consegna"],
+hours:[[P,D],[P],[P,D],[P,D],[P,D],[P,D],[P,D]]}; /* 0=domenica … 6=sabato */
+/* formato voce: "Nome|prezzo|descrizione" – senza prezzo: "Nome|" mostra "da confermare" */
+const MENU=[
+{n:"Pizze",g:[["",["Menù pizze da inserire"]]]},
+{n:"Antipasti",g:[["",["Antipasto egiziano|7","Antipasto mare caldo|9","Bresaola rucola grana|8","Carpaccio di spada|9","Cocktail di gamberetti|8","Cozze alla marinara|8","Cozze gratinate|9","Zuppa di cozze|9","Gamberetti rucola pomodorini|8","Insalata di mare alla catalana|10","Piovra alla catalana|10","Piovra e patate|9","Formaggi misti|8","Salumi misti|8","Melanzane impanate|8"]]]},
+{n:"Primi",g:[["Vegetariani",["Cous cous di verdure|8","Gnocchi alla sorrentina|8","Gnocchi gorgonzola e noci|8","Pappardelle in salsa di noci|8","Penne all’arrabbiata|8","Penne alla sorrentina|8","Risotto ai funghi porcini|10","Tagliatelle ai funghi|9","Tagliatelle asparagi e grana|8"]],["Di carne",["Cous cous di carne|10","Pappardelle Laguna Blu|8","Risotto salsiccia e zafferano|8"]],["Di pesce",["Cous cous di pesce|","Garganelli asparagi e gamberetti|","Garganelli seppie e gamberetti|","Linguine agli scampi|","Linguine all’astice (x2)|","Linguine aragostelle|","Linguine con granchio|","Paella|","Pappardelle mare e monti|","Risotto frutti di mare|","Risotto al nero di seppia|","Spaghetti al cartoccio (x2)|","Paccheri zucchine e gamberetti|","Paccheri con pesce spada e melanzane|","Spaghetti vongole e bottarga|","Spaghetti vongole|","Tagliolini al salmone|"]]]},
+{n:"Secondi",g:[["Vegetariani",["Scamorza al forno|7","Scamorza con verdure al forno|9"]],["Di carne",["Costata alla griglia|15","Costata all’antica|17","Cotoletta alla milanese|12","Cotoletta primavera|13","Filetto alla tartara|14","Scottona ai funghi porcini|14","Scottona al pepe verde|13","Grigliata di carne|12","Kofta kebab|10","Shish kebab|12","Scaloppine a piacere|10","Tagliata funghi porcini|14","Tagliata con patate al forno|13","Tagliata rucola e grana|12"]],["Di pesce",["Branzino alla griglia|12","Branzino al forno zucchine e olive|13","Branzino in crosta di zucchine o patate|13","Fritto di calamari|10","Fritto misto di pesce|12","Gamberoni al cognac|13","Gamberoni alla griglia|12","Grigliata mista di pesce|14","Merluzzo fritto|10","Orata alla griglia|12","Orata alla siciliana|12","Orata gratinata|12","Seppia alla griglia|12","Trancio di spada alla griglia|12","Trancio di spada alla milanese|12","Trancio di spada alla siciliana|12"]]]},
+{n:"Contorni",g:[["",["Insalata mista|4","Patatine fritte|4","Patate al forno|4","Spinaci al burro|4","Verdure alla griglia|5"]]]},
+{n:"Insalatone",g:[["",["Insalata contadina|10|insalata mista, verdure grigliate, funghi porcini, mais, grana","Insalata di pollo|10|mais, mozzarella, olive, straccetti di pollo","Insalata Laguna Blu|10|insalata mista, pomodori, gamberetti, tonno, polpa di granchio","Insalata ricca|9|insalata mista, wurstel, tonno, mozzarella, olive"]]]},
+{n:"Dolci",g:[["",["Torta alla crema d’arancia|","Torta di mele|","Torta pera e cioccolato|","Torta mascarpone e cocco|","Budino al cioccolato|","Crème caramel|","Crema catalana|","Panna cotta|","Tiramisù|","Gelato sciolto (vari gusti)|","Sorbetto al limone|","Tartufo nero/bianco|","Torroncino affogato|"]]]},
+{n:"Caffetteria",g:[["",["Caffè|1","Cappuccino|1,50","Amari|3","Whisky|4"]]]},
+{n:"Bevande e vini",g:[["",["Da inserire"]]]}];
+/* ===== fine contenuti ===== */
+const $=s=>document.querySelector(s),DAYS=["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"],EN=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const f=m=>String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+document.querySelectorAll("[data-t]").forEach(e=>e.textContent=C[e.dataset.t]);
+document.querySelectorAll("[data-tel]").forEach(e=>e.href="tel:"+C.tel);
+document.querySelectorAll("[data-h]").forEach(e=>{e.href=C[e.dataset.h];e.target="_blank";e.rel="noopener"});
+if(C.demo)$("#demo").hidden=false;if(C.credit)$("#cr").textContent=C.credit;
+$("#sv").innerHTML=C.services.map(s=>`<span class="chip">${s}</span>`).join("");
+$("#gl").innerHTML='<div class="ph">Foto da inserire</div>'.repeat(6);
+const rome=()=>{const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Rome",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date()),g=t=>p.find(x=>x.type===t).value;return{d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")),m:+g("hour")*60+ +g("minute")}};
+function stato(){const{d,m}=rome(),s=C.hours[d].find(x=>m>=x[0]&&m<x[1]);if(s)return["Aperto ora – fino alle "+f(s[1]),1];
+for(let i=0;i<8;i++){const dd=(d+i)%7,sl=C.hours[dd].find(x=>i>0||x[0]>m);if(sl)return["Chiuso ora – riapre "+(i==0?"oggi":i==1?"domani":DAYS[dd].toLowerCase())+" alle "+f(sl[0]),0]}return["Chiuso ora",0]}
+function aggiorna(){const[t,o]=stato();$("#st").className="badge"+(o?" on":"");$("#st span:last-child").textContent=t;
+document.querySelectorAll("#ho tr").forEach(r=>r.classList.toggle("today",+r.dataset.d===rome().d))}
+$("#ho").innerHTML=[1,2,3,4,5,6,0].map(d=>{const h=C.hours[d],r=x=>x?f(x[0])+"–"+f(x[1]):"Chiuso";return`<tr data-d="${d}"><td>${DAYS[d]}</td><td>${r(h[0])}</td><td>${r(h[1])}</td></tr>`}).join("");
+aggiorna();setInterval(aggiorna,60000);
+function mostra(i){document.querySelectorAll("#tabs button").forEach((b,j)=>b.setAttribute("aria-pressed",j==i));
+$("#mn").innerHTML=MENU[i].g.map(([t,v])=>(t?`<h3>${t}</h3>`:"")+v.map(x=>{const[n,p,d]=x.split("|");return`<div class="it"><span><b>${n}</b>${d?`<small>${d}</small>`:""}</span>${p===undefined?"":p?`<span class="pr">€ ${p}</span>`:`<span class="pr x">prezzo da confermare</span>`}</div>`}).join("")).join("")}
+$("#tabs").innerHTML=MENU.map((m,i)=>`<button type="button" aria-pressed="false">${m.n}</button>`).join("");
+document.querySelectorAll("#tabs button").forEach((b,i)=>b.onclick=()=>mostra(i));mostra(1);
+const J={"@context":"https://schema.org","@type":"Restaurant",name:C.name,telephone:C.tel,servesCuisine:["Italiana","Pizza","Pesce"],address:{"@type":"PostalAddress",streetAddress:"Via Savona 108",addressLocality:"Milano",postalCode:"20144",addressCountry:"IT"},
+openingHoursSpecification:C.hours.flatMap((h,d)=>h.map(x=>({"@type":"OpeningHoursSpecification",dayOfWeek:EN[d],opens:f(x[0]),closes:x[1]>=1440?"23:59":f(x[1])})))};
+const sc=document.createElement("script");sc.type="application/ld+json";sc.textContent=JSON.stringify(J);document.head.appendChild(sc);
+</script>
+</body>
+</html>
